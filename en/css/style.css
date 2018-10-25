@@ -1,16 +1,12 @@
 .navbar {
-    background: #222;
+    background: linear-gradient(#146094, #23447e);
     padding: 12px 0;
 }
 
 .navbar a {
-    color: rgba(255,255,255,.5);
+    color: #fff;
     transition: color .25s;
     text-decoration: none;
-}
-
-.navbar a:hover {
-    color: rgba(255,255,255,1);
 }
 
 .navbar-branding {
@@ -58,6 +54,28 @@
 
 .rwd-break {
     display: block;
+}
+
+.card-meta span {
+    transform: translateY(-2px);
+}
+.card-meta svg {
+    color: #fff;
+}
+.card-meta svg polygon {
+    fill: #666;
+}
+
+.newsletter-signup {
+    background: #EFF0F4;
+}
+
+.newsletter-signup .uk-button {
+    background: linear-gradient(#146094, #23447e);
+    transition: background .3s;
+}
+.newsletter-signup .uk-button:hover {
+    background: linear-gradient( #23447e, #146094);
 }
 
 @media screen and (max-width: 550px) {
