@@ -8,6 +8,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-126918964-3');
+        gtag('set', {version:'mvp2'})
     </script>
 
     <meta charset="UTF-8">
@@ -78,7 +79,7 @@
                         <small class="card-meta"><span uk-icon="icon: star; ratio: 0.7"></span> 5-minute listen</small>
                     </div>
                     <div class="uk-card-footer">
-                        <a onclick="gtag('event', 'select_content', { content_type: 'PodcastV2' });" href="https://soundcloud.com/tom-camps-172319798/accelerating-content-publishing-using-ai" class="uk-button uk-button-text" target="_blank">Listen to the podcast</a>
+                        <a onclick="gtag('event', 'select_content', { content_type: 'Podcast' });" href="https://soundcloud.com/tom-camps-172319798/accelerating-content-publishing-using-ai" class="uk-button uk-button-text" target="_blank">Listen to the podcast</a>
                     </div>
                 </article>
             </div>
@@ -91,7 +92,7 @@
                         <small class="card-meta"><span uk-icon="icon: star; ratio: 0.7"></span> 5-minute video</small>
                     </div>
                     <div class="uk-card-footer">
-                        <a onclick="gtag('event', 'select_content', { content_type: 'VideoV2' });" href="https://www.youtube.com/watch?v=AbBcfjLXLTE" class="uk-button uk-button-text" target="_blank">Watch the video</a>
+                        <a onclick="gtag('event', 'select_content', { content_type: 'Video' });" href="https://www.youtube.com/watch?v=AbBcfjLXLTE" class="uk-button uk-button-text" target="_blank">Watch the video</a>
                     </div>
                 </article>
             </div>
@@ -104,7 +105,7 @@
                         <small class="card-meta"><span uk-icon="icon: star; ratio: 0.7"></span> 5-minute read</small>
                     </div>
                     <div class="uk-card-footer">
-                        <a onclick="gtag('event', 'select_content', { content_type: 'BlogV2' });" href="https://drive.google.com/open?id=1KnvsvqgvdtyDl5UxSJMcHAscNc0MwYtS" class="uk-button uk-button-text" target="_blank">Read the blog</a>
+                        <a onclick="gtag('event', 'select_content', { content_type: 'Blog' });" href="https://drive.google.com/open?id=1KnvsvqgvdtyDl5UxSJMcHAscNc0MwYtS" class="uk-button uk-button-text" target="_blank">Read the blog</a>
                     </div>
                 </article>
             </div>
@@ -115,7 +116,7 @@
 <div class="uk-section uk-section-small newsletter-signup">
     <div class="uk-container uk-text-center">
         <h3>Previous Episodes</h3>
-        <a href="20181026.html">October 26th, 2018 ></a>
+        <a onclick = "gtag('event','go_to_previous', { previous: 'mvp1'})" href="20181026.html">October 26th, 2018 ></a>
     </div>
 </div>
 
